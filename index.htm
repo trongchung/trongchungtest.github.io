@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KEY</title>
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/font-awesome.css" rel="stylesheet"/>
+    <link href="css/owl.carousel.css" rel="stylesheet"/>
+    <link href="css/owl.theme.css" rel="stylesheet"/>
+    <link href="css/menu-2.css" rel="stylesheet"/>
+    <link href="css/style00.css" rel="stylesheet"/>
+    <link href="css/setmedia.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/menu-2.js"></script>
+    <script type="text/javascript" src="js/style-img.js"></script>
+
+</head>
+<body>
+
+
+<header id="header">
+    <section class="qts_head_top">
+        <div class="text-center" style="height: 40px; background: #0098da; color: #000000;line-height: 40px; font-size: 25px">
+            qts_head_top
+        </div>
+    </section>
+    <div class="clearfix"></div>
+    <section class="qts_head_mid">
+        <div class="text-center" style="height: 100px; background: #0a4c82; color: #000000;line-height: 100px; font-size: 25px">
+            qts_head_mid
+        </div>
+    </section>
+    <div class="clearfix"></div>
+    <section class="qts_head_bot">
+        <div class="text-center" style="height: 40px; background: #080808; color: #FFFFFF;line-height: 40px; font-size: 25px">
+            qts_head_bot
+        </div>
+    </section>
+    <div class="clearfix"></div>
+</header>
+<!-- end header-->
+
+<div class="clearix"></div>
+
+<article id="body_home">
+
+
+
+</article>
+
+<div class="clearfix"></div>
+
+<footer id="footer">
+
+
+
+    <a href="#top" id="go_top"><i class="fa fa-angle-up"></i></a>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".slider_main").owlCarousel({
+                navigation : true,
+                items : 1,
+                itemsCustom : false,
+                itemsDesktop : [1199, 1],
+                itemsDesktopSmall : [979,1],
+                itemsTablet : [768, 1],
+                itemsTabletSmall : false,
+                itemsMobile : [479, 1],
+                singleItem : false,
+                itemsScaleUp : false,
+                autoHeight : true,
+
+                navigationText : ["", ""],
+                rewindNav : true,
+                scrollPerPage : false,
+
+                slideSpeed : 2000,
+                paginationSpeed : 1000,
+                rewindSpeed : 1000,
+                autoPlay : true,
+                baseClass : "owl-carousel",
+                theme : "owl-theme",
+                stopOnHover : true,
+
+                lazyLoad : false,
+                lazyFollow : true,
+                lazyEffect : "fade"
+            });
+        });
+
+
+
+        $("a[href='#top']").click(function() {
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+            return false;
+        });
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >=200) {
+                $('#go_top').show();
+            }
+            else {
+                $('#go_top').hide();
+            }
+        });
+    </script>
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+
+</footer>
+
+</body>
+</html>
